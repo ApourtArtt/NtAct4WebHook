@@ -88,13 +88,12 @@ void Bot::recievedPacket()
     foreach (QString packet, packets)
     {
         QStringList packs;
-        packs = packet.replace("\n","").split(" ");
+        packs = packet.replace("\n","").split(" ", Qt::SkipEmptyParts);
         if(loginServer)
         {
             if(packs[0]=="NsTeST")
             {
-                username = packs[3];
-                sid = packs[5].toInt();
+                username = packs[2];
                 loggedin = true;
                 socket->close();
                 QString packetList = "";
@@ -264,9 +263,13 @@ void Bot::manageServChann(QString packetList)
     packetLine.removeFirst();
     packetLine.removeFirst();
     packetLine.removeFirst();
-    packetLine.removeFirst();
-    if(packetLine[packetLine.size()-1] == "")
-        packetLine.removeLast();
+
+    while(packetLine.size() >= 0 && packetLine[0].size() < 17)
+    {
+        sid = packetLine[0].toInt();
+        packetLine.removeFirst();
+    }
+
     QStringList packetDot;
     for(int i = 0 ; i < packetLine.size() -1 ; i++)
     {

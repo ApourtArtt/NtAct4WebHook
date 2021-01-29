@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.14.0, 2021-01-24T23:43:47. -->
+<!-- Written by QtCreator 4.14.0, 2021-01-29T20:47:05. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -297,6 +297,7 @@
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">BotActe42</value>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:C:/Users/Moi/Documents/GitHub/Act4WebHook/BotActe4.pro</value>
     <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Moi/Documents/GitHub/Act4WebHook/BotActe4.pro</value>
+    <value type="QString" key="RunConfiguration.Arguments">79.110.84.75 4002 f462e5e502579363ed9f27fc137f73d3 94fea4ab22984c7c437126b86ba47ac0 0.9.3.3145 jeantrus32 ExeuryOeufPourri 1 1 1 D 40 2</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
